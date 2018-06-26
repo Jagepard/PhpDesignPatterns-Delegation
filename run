@@ -1,0 +1,18 @@
+#! usr/bin/env php
+<?php
+
+namespace Fundamental\Delegation;
+
+require_once 'vendor/autoload.php';
+
+$teamLead        = new TeamLead();
+$middleDeveloper = new MiddleDeveloper();
+$juniorDeveloper = new JuniorDeveloper();
+
+printf("%s\n", $teamLead->writeCode());
+
+$teamLead->delegateTo($middleDeveloper);
+printf("%s\n", $teamLead->getCodeFromDeveloper());
+
+$teamLead->delegateTo($juniorDeveloper);
+printf("%s\n", $teamLead->getCodeFromDeveloper());
