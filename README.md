@@ -7,3 +7,5 @@
 
 # Delegation | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
 Делегирование
+
+![Delegation](https://github.com/Jagepard/PhpDesignPatterns-Delegation/blob/master/UML.png)
