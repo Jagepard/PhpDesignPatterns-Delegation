@@ -15,11 +15,10 @@ namespace Fundamental\Delegation;
  */
 class TeamLead implements DeveloperInterface, DelegationInterface
 {
-
     /**
      * @var DeveloperInterface
      */
-    protected $developer;
+    private $developer;
 
     /**
      * @param DeveloperInterface $developer
@@ -29,13 +28,27 @@ class TeamLead implements DeveloperInterface, DelegationInterface
         $this->developer = $developer;
     }
 
+    /**
+     * @return string
+     */
     public function writeCode(): string
     {
-        return 'Some excellent code';
+        return (new Program('Some excellent code'))->getType();
     }
 
+    /**
+     * @return string
+     */
     public function getCodeFromDeveloper(): string
     {
-        return $this->developer->writeCode();
+        return $this->getDeveloper()->writeCode();
+    }
+
+    /**
+     * @return DeveloperInterface
+     */
+    public function getDeveloper(): DeveloperInterface
+    {
+        return $this->developer;
     }
 }
