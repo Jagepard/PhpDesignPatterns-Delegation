@@ -15,9 +15,11 @@ namespace Fundamental\Delegation;
  */
 class MiddleDeveloper implements DeveloperInterface
 {
-
+    /**
+     * @return string
+     */
     public function writeCode(): string
     {
-        return 'Some regular code';
+        return (new Program('Some regular code'))->getType();
     }
 }
