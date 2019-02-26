@@ -15,9 +15,11 @@ namespace Fundamental\Delegation;
  */
 class JuniorDeveloper implements DeveloperInterface
 {
-
+    /**
+     * @return string
+     */
     public function writeCode(): string
     {
-        return 'Some really bad code';
+        return (new Program('Some really bad code'))->getType();
     }
 }
