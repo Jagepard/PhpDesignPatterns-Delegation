@@ -25,7 +25,7 @@ class DelegationTest extends PHPUnit_Framework_TestCase
      */
     private $teamLead;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->teamLead = new TeamLead();
     }
