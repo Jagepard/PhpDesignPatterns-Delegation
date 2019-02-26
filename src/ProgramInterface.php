@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 /**
  * @author    : Korotkov Danila <dankorot@gmail.com>
  * @license   https://mit-license.org/ MIT
@@ -10,16 +8,13 @@ declare(strict_types=1);
 namespace Fundamental\Delegation;
 
 /**
- * Class JuniorDeveloper
+ * Interface ProgramInterface
  * @package Fundamental\Delegation
  */
-class JuniorDeveloper implements DeveloperInterface
+interface ProgramInterface
 {
     /**
      * @return string
      */
-    public function writeCode(): string
-    {
-        return (new Program('Some really bad code'))->getType();
-    }
+    public function getType(): string;
 }
