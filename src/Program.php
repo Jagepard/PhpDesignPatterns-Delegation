@@ -9,9 +9,6 @@ declare(strict_types=1);
 
 namespace Fundamental\Delegation;
 
-/**
- * Class Program
- */
 class Program implements ProgramInterface
 {
     /**

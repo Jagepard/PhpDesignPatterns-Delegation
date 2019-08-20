@@ -7,10 +7,6 @@
 
 namespace Fundamental\Delegation;
 
-/**
- * Interface ProgramInterface
- * @package Fundamental\Delegation
- */
 interface ProgramInterface
 {
     /**

@@ -14,10 +14,6 @@ use Fundamental\Delegation\JuniorDeveloper;
 use Fundamental\Delegation\MiddleDeveloper;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class DelegationTest
- * @package Fundamental\Delegation\Tests
- */
 class DelegationTest extends PHPUnit_Framework_TestCase
 {
     /**

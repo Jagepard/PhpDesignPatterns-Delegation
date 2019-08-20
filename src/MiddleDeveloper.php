@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Fundamental\Delegation;
 
-/**
- * Class MiddleDeveloper
- * @package Fundamental\Delegation
- */
 class MiddleDeveloper implements DeveloperInterface
 {
     /**
