@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Fundamental\Delegation;
 
-/**
- * Class TeamLead
- * @package Fundamental\Delegation
- */
 class TeamLead implements DeveloperInterface, DelegationInterface
 {
     /**
