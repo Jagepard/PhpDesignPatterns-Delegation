@@ -6,7 +6,8 @@ namespace Fundamental\Delegation;
 require_once 'vendor/autoload.php';
 
 $teamLead = new TeamLead();
-printf("%s\n", $teamLead->writeCode());
+$teamLead->delegateTo($teamLead);
+printf("%s\n", $teamLead->getCodeFromDeveloper());
 
 $teamLead->delegateTo(new MiddleDeveloper());
 printf("%s\n", $teamLead->getCodeFromDeveloper());
