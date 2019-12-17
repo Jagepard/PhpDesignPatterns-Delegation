@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Fundamental\Delegation;
@@ -29,7 +29,7 @@ class TeamLead implements DeveloperInterface, DelegationInterface
      */
     public function writeCode(): string
     {
-        return (new Program('Some excellent code'))->getType();
+        return (new Program('Some excellent code'))->getCode();
     }
 
     /**
@@ -37,14 +37,6 @@ class TeamLead implements DeveloperInterface, DelegationInterface
      */
     public function getCodeFromDeveloper(): string
     {
-        return $this->getDeveloper()->writeCode();
-    }
-
-    /**
-     * @return DeveloperInterface
-     */
-    public function getDeveloper(): DeveloperInterface
-    {
-        return $this->developer;
+        return $this->developer->writeCode();
     }
 }

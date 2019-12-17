@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Fundamental\Delegation;
@@ -14,22 +14,22 @@ class Program implements ProgramInterface
     /**
      * @var string
      */
-    private $type;
+    private $code;
 
     /**
      * Program constructor.
-     * @param $type
+     * @param $code
      */
-    public function __construct(string $type)
+    public function __construct(string $code)
     {
-        $this->type = $type;
+        $this->code = $code;
     }
 
     /**
      * @return mixed
      */
-    public function getType(): string
+    public function getCode(): string
     {
-        return $this->type;
+        return $this->code;
     }
 }

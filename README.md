@@ -6,8 +6,6 @@
 -----
 
 # Delegation | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
-```php run``` Запустить исполнение шаблона в терминале
-
-Делегирование
+```php run``` execute in terminal
 
 ![Delegation](https://github.com/Jagepard/PhpDesignPatterns-Delegation/blob/master/UML.png)
