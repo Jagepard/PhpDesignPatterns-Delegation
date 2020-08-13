@@ -8,4 +8,9 @@
 # Delegation | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
 ```php run``` execute in terminal
 
-![Delegation](https://github.com/Jagepard/PhpDesignPatterns-Delegation/blob/master/UML.png)
+## Result:
+```
+Some excellent code
+Some regular code
+Some really bad code
+```
