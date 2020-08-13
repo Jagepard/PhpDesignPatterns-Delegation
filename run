@@ -3,7 +3,7 @@
 
 namespace Fundamental\Delegation;
 
-require_once 'vendor/autoload.php';
+require_once "vendor/autoload.php";
 
 $teamLead = new TeamLead();
 $teamLead->delegateTo($teamLead);

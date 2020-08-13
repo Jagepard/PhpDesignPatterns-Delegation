@@ -9,8 +9,5 @@ namespace Fundamental\Delegation;
 
 interface ProgramInterface
 {
-    /**
-     * @return string
-     */
     public function getCode(): string;
 }

@@ -12,10 +12,7 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class DelegationTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @var TeamLead
-     */
-    private $teamLead;
+    private TeamLead $teamLead;
 
     protected function setUp(): void
     {
