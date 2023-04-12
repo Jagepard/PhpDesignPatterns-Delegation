@@ -9,5 +9,8 @@ namespace Fundamental\Delegation;
 
 interface DeveloperInterface
 {
+    /**
+     * @return string
+     */
     public function writeCode(): string;
 }

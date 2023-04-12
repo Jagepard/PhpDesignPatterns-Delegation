@@ -13,11 +13,25 @@ class Program implements ProgramInterface
 {
     private string $code;
 
+    /**
+     * Adds code
+     * ---------
+     * Добавляет программный код
+     * 
+     * @param  string $code
+     */
     public function __construct(string $code)
     {
         $this->code = $code;
     }
 
+    /**
+     * Gets the code
+     * -------------
+     * Получает код
+     * 
+     * @return string
+     */
     public function getCode(): string
     {
         return $this->code;
