@@ -9,5 +9,9 @@ namespace Fundamental\Delegation;
 
 interface DelegationInterface
 {
+    /**
+     * @param  DeveloperInterface $developer
+     * @return void
+     */
     public function delegateTo(DeveloperInterface $developer): void;
 }
